@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Tea & Bakes</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6B4226; /* Brown color for bakery theme */
+            padding: 15px 30px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #FFD700; /* Golden color on hover */
+        }
+
+        .navbar .search-cart input {
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .navbar .search-cart button {
+            background-color: #FFD700;
+            color: #6B4226;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        /* Header Section */
+        header {
+            background: url('./img/bg\ img\ 1') no-repeat center center/cover;
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+            margin-top: 70px; /* Adjust for navbar height */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* Content Section */
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #6B4226;
+        }
+
+        section p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* Values Section */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Call-to-Action Button */
+        .call-to-action a {
+            background-color: #FFD700;
+            color: #6B4226;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .call-to-action a:hover {
+            background-color: #6B4226;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #6B4226;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Tea & Bakes</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search-cart">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </nav>
+<style>
+
+        /* Header Section */
+        header {
+            background: url('./img/menu') no-repeat center center/cover;
+            text-align: center;
+            color:cornsilk  ;
+            padding: 100px 20px;
+            margin-top: 70px; /* Navbar height adjustment */
+            height: 100px; /* Set a height for the header */
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 10px 0 0;
+        }
+
+        /* Menu Section */
+        .menu-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .menu-section h2 {
+            color: #6B4226;
+            margin-bottom: 20px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item h3 {
+            margin: 15px 0;
+            color: #6B4226;
+        }
+
+        .menu-item p {
+            padding: 0 10px;
+            color: #555;
+        }
+
+        .menu-item span {
+            display: block;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #FFD700; /* Golden color for price */
+        }
+
+        .menu-item button {
+            background-color: #FFD700;
+            color: #6B4226;
+            border: none;
+            padding: 10px 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .menu-item button:hover {
+            background-color: #6B4226;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #6B4226;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <!-- Header Section -->
+    <header>
+        <h1>Our Menu</h1>
+        <p>Explore our delicious offerings of teas, baked goods, and more!</p>
+    </header>
+
+    <!-- Menu Content -->
+    <section class="menu-section">
+        <h2>Tea Selection</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="./img/green tea menu" alt="Green Tea">
+                <h3>Green Tea</h3>
+                <p>Refreshing and healthy green tea.</p>
+                <span>$4.99</span>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./img/tea menu" alt="Chai Latte">
+                <h3>Chai </h3>
+                <p>Aromatic spiced chai with creamy milk.</p>
+                <span>$5.99</span>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <h2>Baked Treats</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="./img/choco menu" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich and moist chocolate cake.</p>
+                <span>$8.99</span>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./img/cookie menu" alt="Cookies">
+                <h3>Cookies</h3>
+                <p>Crunchy and delicious homemade cookies.</p>
+                <span>$3.99</span>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <h2>Combos</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="./img/tea and cake menu" alt="Tea & Cake">
+                <h3>Tea & Cake Combo</h3>
+                <p>Enjoy a cup of tea with a slice of cake.</p>
+                <span>$10.99</span>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./img/tea and cookie menu" alt="Tea & Cookies">
+                <h3>Tea & Cookies Combo</h3>
+                <p>Pair your tea with delicious cookies.</p>
+                <span>$7.99</span>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Tea & Bakes. All Rights Reserved.
+    </footer>
+</body>
+</html>

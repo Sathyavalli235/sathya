@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Tea & Bakes</title>
+    <style>
+    /* General Body Styling */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #6B4226; /* Brown color for bakery theme */
+        padding: 15px 30px;
+        color: white;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 0 15px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+        color: #FFD700; /* Golden color on hover */
+    }
+
+    .navbar .search-cart input {
+        padding: 5px;
+        border: none;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+
+    .navbar .search-cart button {
+        background-color: #FFD700;
+        color: #6B4226;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    /* Shop Banner */
+    .shop-banner {
+        background-image: url('./img/images.jpeg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: white;
+        padding: 100px 20px;
+        margin-top: 60px;
+    }
+
+    .shop-banner h1 {
+        margin: 0;
+        font-size: 50px;
+    }
+
+    /* Categories Section */
+    .categories {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #F5F5F5;
+    }
+
+    .categories div {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .categories div img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .categories div h3 {
+        margin: 10px 0;
+    }
+
+    /* Product Grid */
+    .products {
+        display: grid; /* Grid layout for products */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+        gap: 30px; /* Space between rows and columns increased */
+        padding: 20px;
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        height: 100%; /* Consistent card height */
+    }
+
+    .product-card img {
+        max-width: 100%;
+        height: 200px; /* Fixed image height */
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .product-card h3 {
+        margin: 15px 0 10px;
+        font-size: 18px;
+        color: #6B4226;
+    }
+
+    .product-card p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .original-price {
+        text-decoration: line-through;
+        color: #999;
+        margin-right: 10px;
+    }
+
+    .discounted-price {
+        font-weight: bold;
+        color: #FF0000;
+    }
+
+    .product-card button {
+        background-color: #FFD700;
+        color: #6B4226;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+
+    .product-card button:hover {
+        background-color: white;
+        border: 1px solid #FFD700;
+        color: #FFD700;
+    }
+
+    /* Footer Styling */
+    footer {
+        background-color: #6B4226;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 30px;
+    }
+</style>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Tea & Bakes</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="search-cart">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Shop Banner -->
+    <section class="shop-banner">
+        <h1>Welcome to Our Shop</h1>
+        <p>Find the best teas, baked goods, and gifts here!</p>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div>
+            <img src="./img/tea" alt="Teas">
+            <h3>Teas</h3>
+        </div>
+        <div>
+            <img src="./img/cake" alt="Bakes">
+            <h3>Baked Goods</h3>
+        </div>
+        <div>
+            <img src="./img/hamper" alt="Gifts">
+            <h3>Gift Hampers</h3>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="products">
+        <div class="product-card">
+            <img src="./img/greentea" alt="Green Tea">
+            <h3>Premium Green Tea</h3>
+            <p><span class="original-price">$20.00</span><span class="discounted-price">$15.00</span></p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./img/choco cake" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p><span class="original-price">$45.00</span><span class="discounted-price">$30.00</span></p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./img/hamper" alt="Gift Hamper">
+            <h3>Deluxe Gift Hamper</h3>
+            <p><span class="original-price">$60.00</span><span class="discounted-price">$50.00</span></p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./img/tea" alt="Classic Tea">
+            <h3>Classic Tea</h3>
+            <p><span class="original-price">$15.00</span><span class="discounted-price">$10.00</span></p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./img/cookie menu" alt="Cookies">
+            <h3>Delicious Cookies</h3>
+            <p><span class="original-price">$30.00</span><span class="discounted-price">$20.00</span></p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./img/wheat-sandwich-bread" alt="Sandwich Bread">
+            <h3>Sandwich Bread</h3>
+            <p><span class="original-price">$55.00</span><span class="discounted-price">$35.00</span></p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./img/cashews" alt="Cashews">
+            <h3>Cashews</h3>
+            <p><span class="original-price">$70.00</span><span class="discounted-price">$50.00</span></p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./img/diarymilk" alt="Dairy Milk">
+            <h3>Dairy Milk</h3>
+            <p><span class="original-price">$30.00</span><span class="discounted-price">$20.00</span></p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./img/kitkat" alt="KitKat">
+            <h3>KitKat</h3>
+            <p><span class="original-price">$30.00</span><span class="discounted-price">$20.00</span></p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./img/badham" alt="Almonds">
+            <h3>Almonds</h3>
+            <p><span class="original-price">$30.00</span><span class="discounted-price">$20.00</span></p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Tea & Bakes. All Rights Reserved.
+    </footer>
+</body>
+</html>
