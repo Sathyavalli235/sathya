@@ -10,102 +10,103 @@ body {
 }
 
 /* Navbar Styling */
+/* Remove space between navbar and carousel */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #6B4226;
-    padding: 15px 20px;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    justify-content: space-between;
+    background: #6B4226;
+    padding: 10px 20px;
     flex-wrap: wrap;
 }
 
-.navbar .logo {
-    font-size: 24px;
+/* Logo and links */
+.logo {
+    font-size: 1.5rem;
     font-weight: bold;
     color: white;
 }
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.nav-links {
     display: flex;
-    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
 }
-
-.navbar ul li {
-    margin: 0 10px;
-}
-
-.navbar ul li a {
+.nav-links li a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
-    position: relative;
+    font-weight: 500;
 }
-
-.navbar ul li a::after {
-    content: "";
-    display: block;
-    height: 2px;
-    background: #FFD700;
-    width: 0%;
-    transition: width 0.3s;
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-}
-
-.navbar ul li a:hover::after {
-    width: 100%;
-}
-
 .search-cart {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    gap: 5px;
 }
 
-.search-cart input {
-    padding: 5px;
-    border: none;
-    border-radius: 4px;
-    margin: 5px 0;
-}
-
-.search-cart button {
-    background-color: #FFD700;
-    color: #6B4226;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
+/* Hamburger menu */
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
     cursor: pointer;
 }
-
-/* Carousel Styling */
-.carousel {
-    margin-top: 70px;
-    position: relative;
-    width: 100%;
-    max-height: 400px;
-    overflow: hidden;
+#menu-toggle {
+    display: none;
+}
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #d4a373;
+        padding: 10px 0;
+    }
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+    .search-cart {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .search-cart input {
+        flex: 1;
+    }
 }
 
-.carousel img {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out;
+
+/* Carousel */
+/* Remove gap between navbar and carousel */
+#Carousel {
+  margin-top: 0;
+  padding-top: 0;
 }
 
-.carousel img:hover {
-    transform: scale(1.05);
+/* Make carousel images fit full width and height */
+#Carousel .carousel-item img {
+  width: 100%;
+  height: 500px; /* You can adjust height */
+  object-fit: cover;
+}
+
+/* Style carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+/* Optional: fade effect between slides */
+.carousel-item {
+  transition: opacity 0.8s ease-in-out;
 }
 
 /* Page Content Styling */
