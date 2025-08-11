@@ -4,190 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop - Tea & Bakes</title>
-    <style>
-    /* General Body Styling */
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-    }
-
-    /* Navbar Styling */
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #6B4226; /* Brown color for bakery theme */
-        padding: 15px 30px;
-        color: white;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-    }
-
-    .navbar .logo {
-        font-size: 24px;
-        font-weight: bold;
-        color: white;
-    }
-
-    .navbar ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-
-    .navbar ul li {
-        margin: 0 15px;
-    }
-
-    .navbar ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-        transition: color 0.3s ease;
-    }
-
-    .navbar ul li a:hover {
-        color: #FFD700; /* Golden color on hover */
-    }
-
-    .navbar .search-cart input {
-        padding: 5px;
-        border: none;
-        border-radius: 4px;
-        margin-right: 10px;
-    }
-
-    .navbar .search-cart button {
-        background-color: #FFD700;
-        color: #6B4226;
-        border: none;
-        border-radius: 4px;
-        padding: 5px 10px;
-        cursor: pointer;
-    }
-
-    /* Shop Banner */
-    .shop-banner {
-        background-image: url('./img/images.jpeg');
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        color: white;
-        padding: 100px 20px;
-        margin-top: 60px;
-    }
-
-    .shop-banner h1 {
-        margin: 0;
-        font-size: 50px;
-    }
-
-    /* Categories Section */
-    .categories {
-        display: flex;
-        justify-content: space-around;
-        margin: 20px 0;
-        padding: 20px;
-        background-color: #F5F5F5;
-    }
-
-    .categories div {
-        text-align: center;
-        padding: 10px;
-    }
-
-    .categories div img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-
-    .categories div h3 {
-        margin: 10px 0;
-    }
-
-    /* Product Grid */
-    .products {
-        display: grid; /* Grid layout for products */
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
-        gap: 30px; /* Space between rows and columns increased */
-        padding: 20px;
-    }
-
-    .product-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: 15px;
-        text-align: center;
-        background-color: white;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        height: 100%; /* Consistent card height */
-    }
-
-    .product-card img {
-        max-width: 100%;
-        height: 200px; /* Fixed image height */
-        object-fit: cover;
-        border-radius: 5px;
-    }
-
-    .product-card h3 {
-        margin: 15px 0 10px;
-        font-size: 18px;
-        color: #6B4226;
-    }
-
-    .product-card p {
-        font-size: 16px;
-        margin: 10px 0;
-    }
-
-    .original-price {
-        text-decoration: line-through;
-        color: #999;
-        margin-right: 10px;
-    }
-
-    .discounted-price {
-        font-weight: bold;
-        color: #FF0000;
-    }
-
-    .product-card button {
-        background-color: #FFD700;
-        color: #6B4226;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 15px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: all 0.3s ease;
-    }
-
-    .product-card button:hover {
-        background-color: white;
-        border: 1px solid #FFD700;
-        color: #FFD700;
-    }
-
-    /* Footer Styling */
-    footer {
-        background-color: #6B4226;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        margin-top: 30px;
-    }
-</style>
-
+<link rel="stylesheet" href="shop.css">
+    
 </head>
 <body>
     <!-- Navbar -->
@@ -296,8 +114,50 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        &copy; 2024 Tea & Bakes. All Rights Reserved.
-    </footer>
+    <footer class="site-footer">
+  <div class="footer-container">
+    
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p><strong>Address:</strong> 207-b Near First cry, Salem Road, Namakkal</p>
+      <p><strong>Phone:</strong> +91 93449 43584</p>
+      <p><strong>Email:</strong> tea&bakes@gmail.com</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Order Details</a></li>
+        <li><a href="#">Payment Options</a></li>
+        <li><a href="#">Delivery Partner</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Subscribe</h3>
+      <p>Get the latest offers and updates straight to your inbox.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <ul class="social-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Tea & Bakes. All Rights Reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
