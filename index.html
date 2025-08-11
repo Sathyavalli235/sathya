@@ -4,181 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea & Bakes</title>
-    <style>
-        /* General Styling */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        /* Navbar Styling */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #6B4226; /* Brown color for bakery theme */
-            padding: 15px 30px;
-            color: white;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
-        }
-
-        .navbar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .navbar ul li {
-            margin: 0 15px;
-        }
-
-        .navbar ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
-
-        .navbar ul li a:hover {
-            color: #FFD700; /* Golden color on hover */
-        }
-
-        .navbar .search-cart input {
-            padding: 5px;
-            border: none;
-            border-radius: 4px;
-            margin-right: 10px;
-        }
-
-        .navbar .search-cart button {
-            background-color: #FFD700;
-            color: #6B4226;
-            border: none;
-            border-radius: 4px;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-
-        /* Carousel Styling */
-        .carousel {
-            margin-top: 70px; /* Adjust for fixed navbar */
-            position: relative;
-            width: 100%;
-            max-height: 400px;
-            overflow: hidden;
-        }
-
-        .carousel img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            animation: slide 12s infinite;
-        }
-
-        /* Page Content Styling */
-        .content-section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .content-section:nth-child(even) {
-            background-color: #F5F5F5;
-        }
-
-        .content-section h2 {
-            margin-bottom: 20px;
-            color: #6B4226;
-        }
-
-        .content-section p {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color:#6B4226;
-            color: white;
-            font-size: 14px;
-            padding: 20px 0;
-        }
-
-        .footer-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-
-        .footer-section {
-            flex: 1;
-            margin: 10px;
-            text-align: center;
-        }
-
-        .footer-section h3 {
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-
-        .footer-section p {
-            margin: 0;
-            font-size: 14px;
-        }
-
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-section ul li a {
-            text-decoration: none;
-            color: white;
-            transition: color 0.3s ease;
-        }
-
-        .footer-section ul li a:hover {
-            color: #FFD700;
-        }
-
-        .footer-section input[type="email"] {
-            padding: 10px;
-            width: 70%;
-            border: none;
-            border-radius: 5px;
-            margin-right: 5px;
-        }
-
-        .footer-section button {
-            padding: 10px;
-            border: none;
-            background-color: #FFD700;
-            color:darkseagreen;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 12px;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
     <!-- Navbar -->
@@ -205,78 +32,191 @@
         <img src="./img/c" alt="Carousel Image 1">
     </div>
 
-    <!-- Content Sections -->
-    <section class="content-section" id="home">
-        <h2>Welcome to Tea & Bakes</h2>
-        <p>Discover the finest teas and freshly baked goods crafted with love and passion. Indulge in the perfect combination of flavors and aromas that will make every moment special.</p>
-    </section>
+   <!-- Featured Items Section -->
+<section class="content-section" id="featured">
+    <h2>Featured Delights</h2>
+    <div class="featured-items">
+        <div class="item">
+            <img src="./img/greentea" alt="Matcha Tea">
+            <h3>Matcha Green Tea</h3>
+            <p>Rich, earthy flavors with a smooth finish. Perfect for a mindful morning.</p>
+        </div>
+        <div class="item">
+            <img src="./img/dark.jpeg" alt="Chocolate Cake">
+            <h3>Dark Chocolate Cake</h3>
+            <p>Decadent layers of chocolate sponge with silky ganache.</p>
+        </div>
+        <div class="item">
+            <img src="./img/lemon tart.jpeg" alt="Lemon Tart">
+            <h3>Lemon Tart</h3>
+            <p>A zesty treat with buttery crust and tangy lemon filling.</p>
+        </div>
+        <div class="item">
+            <img src="./img/strawberry.jpeg" alt="Strawberry Shortcake">
+            <h3>Strawberry Shortcake</h3>
+            <p>Fluffy sponge cake layered with whipped cream and fresh strawberries.</p>
+        </div>
+        <div class="item">
+            <img src="./img/herbal tea.jpeg" alt="Herbal Chamomile Tea">
+            <h3>Herbal Chamomile Tea</h3>
+            <p>Calming and soothing herbal blend, perfect for unwinding in the evening.</p>
+        </div>
+    </div>
+</section>
 
-    <section class="content-section" id="shop">
-        <h2>Our Shop</h2>
-        <p>Explore our wide range of teas, cakes, pastries, and gift hampers. There's something for everyone to enjoy!</p>
-    </section>
 
-    <section class="content-section" id="about">
-        <h2>About Us</h2>
-        <p>Tea & Bakes is dedicated to providing high-quality products made with natural ingredients. Our mission is to bring joy and warmth to your everyday life.</p>
-    </section>
+<!-- Chef's Special Section -->
+<section class="specials-highlight">
+    <h2>Today's Specials ✨</h2>
+    <div class="specials-container">
+        <div class="special-card">
+            <img src="./img/honey.jpeg" alt="Honey Lavender Latte">
+            <div class="special-info">
+                <h3>Honey Lavender Latte</h3>
+                <p>Smooth espresso with floral lavender and sweet honey.</p>
+                <span class="price">₹375</span>
+            </div>
+        </div>
+        <div class="special-card">
+            <img src="./img/raspberry.jpeg" alt="Raspberry Almond Tart">
+            <div class="special-info">
+                <h3>Raspberry Almond Tart</h3>
+                <p>Buttery crust with almond cream topped with fresh raspberries.</p>
+                <span class="price">₹440</span>
+            </div>
+        </div>
+        <div class="special-card">
+            <img src="./img/matcha.jpeg" alt="Matcha Parfait">
+            <div class="special-info">
+                <h3>Matcha Parfait</h3>
+                <p>Layers of matcha cream, sponge cake, and fresh fruit.</p>
+                <span class="price">₹505</span>
+            </div>
+        </div>
+        <div class="special-card">
+            <img src="./img/masala chai.jpeg" alt="Masala Chai">
+            <div class="special-info">
+                <h3>Masala Chai</h3>
+                <p>Traditional Indian spiced tea brewed with milk and aromatic spices.</p>
+                <span class="price">₹150</span>
+            </div>
+        </div>
+        <div class="special-card">
+            <img src="./img/janum cake.jpeg" alt="Gulab Jamun Cheesecake">
+            <div class="special-info">
+                <h3> Jamun Cheesecake</h3>
+                <p>A fusion dessert blending creamy cheesecake with classic gulab jamun.</p>
+                <span class="price">₹350</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section class="content-section" id="menu">
-        <h2>Menu & Recipes</h2>
-        <p>Check out our special menu and explore recipes that pair perfectly with our teas and baked goods.</p>
-    </section>
 
-    <section class="content-section" id="offers">
-        <h2>Special Offers</h2>
-        <p>Don't miss out on our exclusive discounts and bundle deals. Treat yourself or your loved ones today!</p>
-    </section>
 
-    <section class="content-section" id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or feedback? Reach out to us, and we'll be happy to help!</p>
-    </section>
+<!-- Customer Favorites Section -->
+<section class="content-section" id="testimonials">
+  <h2>Customer Favorites</h2>
+    <div class="favorites-grid">
+        <div class="favorite-item">
+            <img src="./img/vanilla.jpeg" alt="Vanilla Chai Latte">
+            <h3>Vanilla Chai Latte</h3>
+            <p>Spiced tea with velvety milk for a cozy indulgence.</p>
+        </div>
+        <div class="favorite-item">
+            <img src="./img/blueberry.jpeg" alt="Blueberry Muffins">
+            <h3>Blueberry Muffins</h3>
+            <p>Freshly baked with bursts of juicy blueberries.</p>
+        </div>
+        <div class="favorite-item">
+            <img src="./img/gray.jpeg" alt="Classic Earl Grey">
+            <h3>Classic Earl Grey</h3>
+            <p>Bold black tea with a hint of citrusy bergamot.</p>
+        </div>
+        <div class="favorite-item">
+            <img src="./img/almond.jpeg" alt="Almond Croissants">
+            <h3>Almond Croissants</h3>
+            <p>Flaky pastry filled with rich almond cream.</p>
+        </div>
+        <div class="favorite-item">
+            <img src="./img/Pistachio Macarons.jpeg" alt="Pistachio Macarons">
+            <h3>Pistachio Macarons</h3>
+            <p>Delicate French cookies with a creamy pistachio filling.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="content-section" id="testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>“The masala chai here takes me straight back to my grandmother’s kitchen. Absolutely soul-warming!”</p>
+      <h4>- Priya Menon</h4>
+    </div>
+    <div class="testimonial">
+      <p>“Every pastry is baked to perfection — flaky, buttery, and full of flavor. Can’t pick a favorite!”</p>
+      <h4>- Rohan Verma</h4>
+    </div>
+    <div class="testimonial">
+      <p>“I’m hooked on their matcha latte. Smooth, rich, and just the right amount of sweetness.”</p>
+      <h4>- Ananya Iyer</h4>
+    </div>
+    <div class="testimonial">
+      <p>“I ordered a gift hamper for my friend, and she hasn’t stopped raving about it since!”</p>
+      <h4>- Arjun Nair</h4>
+    </div>
+  </div>
+</section>
+
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Find Us</h3>
-                <p>207-b Near First cry,Salem Road,Namakkal</p>
-            </div>
-            <div class="footer-section">
-                <h3>Call Us</h3>
-                <p>+91 9344943585</p>
-            </div>
-            <div class="footer-section">
-                <h3>Mail Us</h3>
-                <p>tea&bakes@gmail.com</p>
-            </div>
-            <div class="footer-section">
-                <h3>Our Gateways</h3>
-                <ul>
-                    <li><a href="#">Order Details</a></li>
-                    <li><a href="#">Payment Options</a></li>
-                    <li><a href="#">Delivery Partner</a></li>
-                    <li><a href="#">Cancellation Policy</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Subscribe</h3>
-                <input type="email" placeholder="Email Address">
-                <button>></button>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                
-                <ul>Intagram</ul>
-                <ul>Facebook</ul>
-                <ul>Twitter</ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Tea & Bakes. All Rights Reserved.</p>
-        </div>
-    </footer>
+   <footer class="site-footer">
+  <div class="footer-container">
+    
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p><strong>Address:</strong> 207-b Near First cry, Salem Road, Namakkal</p>
+      <p><strong>Phone:</strong> +91 93449 43584</p>
+      <p><strong>Email:</strong> tea&bakes@gmail.com</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Order Details</a></li>
+        <li><a href="#">Payment Options</a></li>
+        <li><a href="#">Delivery Partner</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Subscribe</h3>
+      <p>Get the latest offers and updates straight to your inbox.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <ul class="social-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Tea & Bakes. All Rights Reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
