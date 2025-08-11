@@ -4,122 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Tea & Bakes</title>
-    <style>
-      /* General Styling */
-      body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
+    <link rel="stylesheet" href="contact.css">
 
-        /* Navbar Styling */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #6B4226; /* Brown color for bakery theme */
-            padding: 15px 30px;
-            color: white;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
-        }
-
-        .navbar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .navbar ul li {
-            margin: 0 15px;
-        }
-
-        .navbar ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
-
-        .navbar ul li a:hover {
-            color: #FFD700; /* Golden color on hover */
-        }
-
-        .navbar .search-cart input {
-            padding: 5px;
-            border: none;
-            border-radius: 4px;
-            margin-right: 10px;
-        }
-
-        .navbar .search-cart button {
-            background-color: #FFD700;
-            color: #6B4226;
-            border: none;
-            border-radius: 4px;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-
-        /* Carousel Styling */
-        .carousel {
-            margin-top: 70px; /* Adjust for fixed navbar */
-            position: relative;
-            width: 100%;
-            max-height: 400px;
-            overflow: hidden;
-        }
-
-        .carousel img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            animation: slide 12s infinite;
-        }
-
-       
-
-        /* Page Content Styling */
-        .content-section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .content-section:nth-child(even) {
-            background-color: #F5F5F5;
-        }
-
-        .content-section h2 {
-            margin-bottom: 20px;
-            color: #6B4226;
-        }
-
-        .content-section p {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        footer {
-            background-color: #6B4226;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
-    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <header>
+     <header>
         <nav class="navbar">
             <div class="logo">Tea & Bakes</div>
             <ul>
@@ -136,136 +26,6 @@
             </div>
         </nav>
     </header>
-    <style>
-        /* General Styling */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        /* Navbar Styling */
-        .navbar {
-            display: flex;
-            justify-content: center; /* Center the nav items */
-            align-items: center;
-            background-color: #6B4226; /* Brown for bakery theme */
-            padding: 15px 30px;
-            color: white;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar .logo {
-            font-size: 24px;
-            font-weight: bold;
-            margin-right: auto; /* Push the logo to the left */
-        }
-
-        .navbar ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        .navbar ul li {
-            margin: 0 15px;
-        }
-
-        .navbar ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-            transition: color 0.3s;
-        }
-
-        .navbar ul li a:hover {
-            color: #FFD700; /* Golden hover */
-        }
-
-        /* Header Section */
-        header {
-            background: url('./img/contact1') no-repeat center center/cover;
-            text-align: center;
-            color: white;
-            padding: 100px 20px;
-            margin-top: 70px; /* Navbar height adjustment */
-            height: 100px;
-        }
-
-        header h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 20px;
-            margin: 10px 0 0;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            padding: 50px 20px;
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .contact-section h2 {
-            color: #6B4226;
-            margin-bottom: 20px;
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            text-align: left;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .contact-form textarea {
-            height: 150px;
-            resize: vertical;
-        }
-
-        .contact-form button {
-            background-color: #FFD700;
-            color: #6B4226;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            width: 100%;
-        }
-
-        .contact-form button:hover {
-            background-color: #6B4226;
-            color: white;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #6B4226;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
-    </style>
 </head>
 <body>
    
@@ -290,8 +50,51 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        &copy; 2024 Tea & Bakes. All Rights Reserved.
-    </footer>
+    <!-- Footer -->
+   <footer class="site-footer">
+  <div class="footer-container">
+    
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p><strong>Address:</strong> 207-b Near First cry, Salem Road, Namakkal</p>
+      <p><strong>Phone:</strong> +91 93449 43584</p>
+      <p><strong>Email:</strong> tea&bakes@gmail.com</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Order Details</a></li>
+        <li><a href="#">Payment Options</a></li>
+        <li><a href="#">Delivery Partner</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Subscribe</h3>
+      <p>Get the latest offers and updates straight to your inbox.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <ul class="social-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Tea & Bakes. All Rights Reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
