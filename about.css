@@ -1,11 +1,9 @@
-        /* General Styling */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
         }
 
-        /* Navbar Styling */
        .navbar {
     display: flex;
     justify-content: space-between;
@@ -102,7 +100,6 @@
             margin-top: 10px;
         }
 
-        /* Content Section */
         section {
             padding: 50px 20px;
             max-width: 1000px;
@@ -139,7 +136,6 @@
             margin: 10px 0;
         }
 
-        /* Call-to-Action Button */
         .call-to-action a {
             background-color: #FFD700;
             color: #6B4226;
@@ -156,7 +152,6 @@
             color: white;
         }
 
-        /* Footer */
        .site-footer {
   background: #4b2c20; /* rich brown */
   color: #fff;
@@ -173,7 +168,6 @@
   text-decoration: underline;
 }
 
-/* Footer Layout */
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -191,7 +185,6 @@
   color: #ffd27f;
 }
 
-/* Quick Links */
 .footer-section ul {
   list-style: none;
   padding: 0;
@@ -201,7 +194,6 @@
   margin-bottom: 8px;
 }
 
-/* Subscribe Form */
 .footer-section form {
   display: flex;
   gap: 5px;
@@ -227,13 +219,11 @@
   background: #ffbf40;
 }
 
-/* Social Links */
 .social-links li {
   display: inline-block;
   margin-right: 10px;
 }
 
-/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
@@ -242,10 +232,10 @@
   font-size: 0.9rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     align-items: flex-start;
   }
 }
+
